@@ -10,6 +10,7 @@ A modern, responsive React web application built based on Adobe XD designs. This
 - **Contact Form**: Fully functional contact form with validation and API integration
 - **Modern UI/UX**: Clean, professional design with smooth animations and transitions
 - **API Integration**: Connects to external REST endpoints for dynamic content
+- **Comprehensive Testing**: Full test coverage with Jest and React Testing Library
 
 ## Pages
 
@@ -33,10 +34,11 @@ A modern, responsive React web application built based on Adobe XD designs. This
 ## Technology Stack
 
 - **React 18.2.0**: Latest version with modern hooks
-- **React Router 6**: Client-side routing
-- **Swiper.js**: Carousel functionality
+- **React Router 6.8.1**: Client-side routing
+- **Swiper.js 10.3.1**: Carousel functionality
 - **CSS3**: Modern styling with CSS variables
 - **Responsive Design**: Mobile-first approach
+- **Jest & React Testing Library**: Comprehensive testing framework
 
 ## API Endpoints
 
@@ -72,6 +74,14 @@ The application integrates with the following external APIs:
 
 4. Open your browser and navigate to `http://localhost:3000`
 
+### Available Scripts
+
+- `npm start` - Start development server
+- `npm run build` - Create production build
+- `npm test` - Run tests in watch mode
+- `npm run test:coverage` - Run tests with coverage report
+- `npm run test:ci` - Run tests for continuous integration
+
 ### Building for Production
 
 To create a production build:
@@ -87,21 +97,42 @@ The built files will be in the `build` folder.
 ```
 src/
 ├── components/          # Reusable UI components
-│   ├── Header.js       # Navigation header
+│   ├── Header.js       # Navigation header component
 │   ├── Header.css      # Header styles
+│   ├── Header.test.js  # Header component tests
 │   ├── Footer.js       # Footer component
 │   └── Footer.css      # Footer styles
 ├── pages/              # Page components
 │   ├── HomePage.js     # Home page with carousel
 │   ├── HomePage.css    # Home page styles
+│   ├── HomePage.test.js # Home page tests
 │   ├── AboutPage.js    # About us page
 │   ├── AboutPage.css   # About page styles
+│   ├── AboutPage.test.js # About page tests
 │   ├── ContactPage.js  # Contact form page
-│   └── ContactPage.css # Contact page styles
+│   ├── ContactPage.css # Contact page styles
+│   └── ContactPage.test.js # Contact page tests
+├── models/             # Data models and API interfaces
+│   ├── apiModels.js    # API data models and validation
+│   └── apiModels.test.js # API models tests
 ├── App.js              # Main application component
 ├── App.css             # Global styles and CSS variables
 ├── index.js            # Application entry point
-└── index.css           # Base styles
+├── index.css           # Base styles
+└── setupTests.js       # Test configuration and setup
+
+public/
+├── index.html          # HTML template
+├── Logo.svg            # Company logo
+├── helix-logo.png      # Alternative logo
+├── hero-1.jpg          # Hero carousel image 1
+├── hero-2.jpg          # Hero carousel image 2
+├── placeholder-hero.jpg # Placeholder hero image
+├── office-1.jpg        # Office image 1
+├── office-2.jpg        # Office image 2
+├── Icon_Arrow.svg      # Arrow icon
+├── Icon_Submit.svg     # Submit button icon
+└── Icon_Valid.svg      # Validation icon
 ```
 
 ## Features in Detail
@@ -133,6 +164,12 @@ src/
 - Consistent color scheme using CSS variables
 - Modern typography and spacing
 - Smooth hover effects and transitions
+
+### Testing
+- Comprehensive unit tests for all components
+- API model testing and validation
+- Test coverage reporting
+- Continuous integration ready
 
 ## Browser Support
 
@@ -169,7 +206,7 @@ The application uses CSS variables for easy theming:
 1. Fork the repository
 2. Create a feature branch
 3. Make your changes
-4. Test thoroughly
+4. Test thoroughly with `npm test`
 5. Submit a pull request
 
 ## License
