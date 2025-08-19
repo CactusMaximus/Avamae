@@ -171,6 +171,7 @@ public/
 - Test coverage reporting
 - Continuous integration ready
 
+## Address Details
 Use the following details for a succesfull address submission:
 
 Address line 1:
