@@ -1,0 +1,152 @@
+.about-page {
+  padding: 80px 0;
+  background-color: var(--background-white);
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: var(--text-dark);
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.about-text-section {
+  margin-bottom: 50px;
+}
+
+.about-paragraph {
+  font-size: 1.2rem;
+  color: var(--text-dark);
+  line-height: 1.8;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.about-paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.about-link {
+  color: var(--primary-blue);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.about-link:hover {
+  color: var(--secondary-blue);
+  text-decoration: underline;
+}
+
+.about-subheading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.about-list li {
+  font-size: 1.2rem;
+  color: var(--text-dark);
+  line-height: 1.8;
+  margin-bottom: 16px;
+  padding-left: 24px;
+  position: relative;
+}
+
+.about-list li::before {
+  content: "•";
+  color: var(--primary-blue);
+  font-weight: bold;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+.about-image-section {
+  margin: 80px 0;
+  text-align: center;
+}
+
+.about-office-image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 12px 40px var(--shadow-light);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-office-image:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px var(--shadow-medium);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-page {
+    padding: 60px 0;
+  }
+  
+  .about-content {
+    max-width: 100%;
+    padding: 0 30px;
+  }
+  
+  .about-title {
+    font-size: 3rem;
+    margin-bottom: 40px;
+  }
+  
+  .about-text-section {
+    margin-bottom: 40px;
+  }
+  
+  .about-paragraph {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  
+  .about-image-section {
+    margin: 60px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-page {
+    padding: 40px 0;
+  }
+  
+  .about-content {
+    padding: 0 20px;
+  }
+  
+  .about-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .about-paragraph {
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .about-image-section {
+    margin: 40px 0;
+  }
+} 
