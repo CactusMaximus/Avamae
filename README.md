@@ -171,6 +171,23 @@ public/
 - Test coverage reporting
 - Continuous integration ready
 
+Use the following details for a succesfull address submission:
+
+Address line 1:
+27 COLMORE ROW
+
+City/Town:
+BIRMINGHAM
+
+State/County:
+BIRMINGHAM 
+
+Code:
+B3 2EW
+
+Country:
+United Kingdom
+
 ## Browser Support
 
 - Chrome (latest)
